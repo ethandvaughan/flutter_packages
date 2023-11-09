@@ -99,6 +99,7 @@ public final class CameraUtils {
     String[] cameraNames = cameraManager.getCameraIdList();
     List<Map<String, Object>> cameras = new ArrayList<>();
     for (String cameraName : cameraNames) {
+      System.out.println(cameraName);
       int cameraId;
       try {
         cameraId = Integer.parseInt(cameraName, 10);
